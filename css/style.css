@@ -11,7 +11,7 @@ html {
   
   @media screen and (min-width: 12.50em) {
     html {
-      font-size: calc( 0.75rem + (1.5 - 0.75) * (100vw - 12.50rem) / (75 - 12.50));
+      font-size: calc( 0.75rem + (1.5 - 0.75) * (100vw - 12.50rem) / 62.5);
     }
   }
   
