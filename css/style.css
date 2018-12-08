@@ -1,4 +1,8 @@
 /* Base */
+/* Layout */
+/* Module */
+/* State */
+/* Theme */
 *,
 *::before,
 *::after {
@@ -76,17 +80,8 @@ a img {
   border: 0;
 }
 
-/* Layout */
-/* Module */
-/* State */
-/* Theme */
-
 .row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: 0 auto;
   max-width: 1800px;
@@ -94,8 +89,6 @@ a img {
 }
   
 .column {
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   min-width: initial;
   padding: 0 0.625rem;
@@ -108,8 +101,6 @@ a img {
 }
   
 .logo-container {
-  -webkit-flex: 0 0 calc(100% / 12 * 4);
-  -ms-flex: 0 0 calc(100% / 12 * 4);
   flex: 0 0 calc(100% / 12 * 4);
   margin-left: calc(100% / 12 * 4);
 }
@@ -163,15 +154,11 @@ a img {
   
 @media screen and (min-width: 40em) {
   .logo-container {
-    -webkit-flex: 0 0 calc(100% / 12);
-    -ms-flex: 0 0 calc(100% / 12);
     flex: 0 0 calc(100% / 12);
     margin-left: 0;
   }
   
   .title-container {
-    -webkit-flex: 0 0 calc(100% / 12 * 11);
-    -ms-flex: 0 0 calc(100% / 12 * 11);
     flex: 0 0 calc(100% / 12 * 11);
   }
 
@@ -186,8 +173,6 @@ a img {
   }
 
   .project {
-    -webkit-flex: 0 0 calc(100% / 12 * 4);
-    -ms-flex: 0 0 calc(100% / 12 * 4);
     flex: 0 0 calc(100% / 12 * 4);
     max-width: calc(100% / 12 * 4);
   }
