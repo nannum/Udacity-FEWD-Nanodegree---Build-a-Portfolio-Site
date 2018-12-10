@@ -1,8 +1,4 @@
 /* Base */
-/* Layout */
-/* Module */
-/* State */
-/* Theme */
 *,
 *::before,
 *::after {
@@ -31,16 +27,12 @@ body {
   color: rgba(45, 60, 73, 1);
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
-  padding: 0 0.625rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 0.625rem;
 }
   
 img {
   height: auto;
   max-width: 100%;
-  vertical-align: middle;
-  -ms-interpolation-mode: bicubic;
 }
 
 figure {
@@ -60,26 +52,23 @@ p {
 h1,
 h2,
 h3 {
-  color: inherit;
-  font-style: normal;
   font-weight: normal;
 }
 
 a {
-  color: rgba(45, 60, 73, 1);
+  color: rgba(2, 179, 228, 1);
   cursor: pointer;
   text-decoration: none;
 }
   
 a:hover,
 a:focus {
-  color: rgba(45, 60, 73, 0.75);
+  color: rgba(2, 179, 228, 0.65);
 }
-
-a img {
-  border: 0;
-}
-
+/* Layout */
+/* Module */
+/* State */
+/* Theme */
 .row {
   display: flex;
   flex-flow: row wrap;
