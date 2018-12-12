@@ -1,4 +1,6 @@
-/* Base */
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
 *,
 *::before,
 *::after {
@@ -7,29 +9,29 @@
 
 html {
   box-sizing: border-box;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
-  
-@media screen and (min-width: 12.50em) {
+
+@media screen and (min-width: 20rem) {
   html {
-    font-size: calc( 0.75rem + (1.5 - 0.75) * (100vw - 12.50rem) / 62.5);
+    font-size: calc( 1rem + 0.5 * ((100vw - 20rem) / 60));
   }
 }
 
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 80rem) {
   html {
     font-size: 1.5rem;
   }
 }
-  
+
 body {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(45, 60, 73, 1);
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
-  margin: 0 0.625rem;
+  margin: 0 1rem;
 }
-  
+
 img {
   height: auto;
   max-width: 100%;
@@ -59,57 +61,63 @@ a {
   color: rgba(2, 179, 228, 1);
   cursor: pointer;
   text-decoration: none;
+  transition: all .3s;
 }
-  
+
 a:hover,
 a:focus {
-  color: rgba(2, 179, 228, 0.65);
+  color: rgba(2, 179, 228, 0.60);
 }
-/* Layout */
-/* Module */
-/* State */
-/* Theme */
-.row {
+
+/*------------------------------------*\
+  #LAYOUT
+\*------------------------------------*/
+.container {
   display: flex;
-  flex-flow: row wrap;
-  margin: 0 auto;
-  max-width: 1800px;
-  min-width: 320px;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
-  
-.column {
-  flex: 1 1 100%;
-  min-width: initial;
-  padding: 0 0.625rem;
-}
-  
+
+/*------------------------------------*\
+  #MODULE
+\*------------------------------------*/
 .header {
   border-bottom: 5px solid rgba(125, 151, 173, 1);
   padding: 2rem 0 1.25rem;
   margin-bottom: 1.5rem;
 }
-  
-.logo-container {
-  flex: 0 0 calc(100% / 12 * 4);
-  margin-left: calc(100% / 12 * 4);
+
+.logo {
+  align-self: center;
+  fill: rgba(2, 179, 228, 1);
+  flex: 0 1 auto;
+  max-width: 100px;
+  min-width: 100px;
 }
-  
-.page-title {
-  font: 200 2.281rem/1.5 "Raleway", sans-serif;
+
+.title {
+  font: 200 2.281em/1.5 "Raleway", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
-  
-.page-sub-title {
-  font-size: 1.125rem;
+
+.subtitle {
+  font-size: 1.125em;
   text-align: center;
   text-transform: uppercase;
 }
-  
+/*------------------------------------*\
+  #STATE
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #THEME
+\*------------------------------------*/
+/*
 .hero-container {
   margin-bottom: 1.5rem;
 }
-  
+
 .hero {
   max-height: 400px;
   overflow: hidden;
@@ -120,33 +128,33 @@ a:focus {
   font-size: 1.266rem;
   margin: 0 0 0.417rem 0.500rem;
 }
-  
+
 .project {
   margin-bottom: 1.5rem;
 }
-  
+
 .project-title,
 .project-link {
   display: block;
   text-align: center;
   word-wrap: break-word;
 }
-  
+
 .project-title {
   font-size: 1.424rem;
   text-transform: uppercase;
 }
-  
+
 .project-link {
   font-size: 0.79rem;
 }
-  
+
 @media screen and (min-width: 40em) {
   .logo-container {
     flex: 0 0 calc(100% / 12);
     margin-left: 0;
   }
-  
+
   .title-container {
     flex: 0 0 calc(100% / 12 * 11);
   }
@@ -165,4 +173,4 @@ a:focus {
     flex: 0 0 calc(100% / 12 * 4);
     max-width: calc(100% / 12 * 4);
   }
-}
+} */
