@@ -30,6 +30,8 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   margin: 0 1rem;
+  max-width: 80rem;
+  min-width: 18.750rem;
 }
 
 img {
@@ -90,9 +92,8 @@ a:focus {
 .logo {
   align-self: center;
   fill: rgba(2, 179, 228, 1);
-  flex: 0 1 auto;
-  max-width: 100px;
-  min-width: 100px;
+  max-width: 6.250rem;
+  min-width: 6.250rem;
 }
 
 .title {
@@ -106,6 +107,16 @@ a:focus {
   text-align: center;
   text-transform: uppercase;
 }
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero__image {
+  max-height: 25rem;
+  object-fit: cover;
+}
+
 /*------------------------------------*\
   #STATE
 \*------------------------------------*/
@@ -114,13 +125,9 @@ a:focus {
   #THEME
 \*------------------------------------*/
 /*
-.hero-container {
-  margin-bottom: 1.5rem;
-}
 
-.hero {
-  max-height: 400px;
-  overflow: hidden;
+.container__element {
+  flex: initial;
 }
 
 .section-title {
