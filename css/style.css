@@ -137,12 +137,9 @@ a:focus {
 }
 
 .hero {
-  margin-bottom: 1.5rem;
-}
-
-.hero__image {
-  max-height: 25rem;
-  object-fit: cover;
+  max-height: 400px;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .portfolio__title {
